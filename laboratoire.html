@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laboratoire</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Laboratoire</h1>
+            <nav>
+                <a href="index.html">Programme d'études</a>
+                <a href="generale.html">OpenLabs</a>
+                <a href="fin.html">À propos</a>
+            </nav>
+            <nav>
+                <a href="laboratoire.html">Laboratoire</a>
+                <a href="projets.html">Mes projets</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Publiques</h2>
+                    <form id="dépôt">
+                        <label for="nom" class="depotform">Nom*</label>
+                        <input type="text" id="nom" required class="depotform">
+                        <label for="prenom" class="depotform">Prénom*</label>
+                        <input type="text" id="prenom" required class="depotform">
+                        <label for="email" class="depotform">Adresse e-mail*</label>
+                        <input type="email" id="email" required class="depotform">
+                        <label for="projet" class="depotform">Nom du projet / de l'invention*</label>
+                        <input type="text" id="projet" required class="depotform">
+                        <label for="categorie" class="depotform">Catégorie*</label>
+                    <select id="categorie" required class="depotform">
+                        <option>Biologie</option>
+                        <option>Physique</option>
+                        <option>Chimie</option>
+                        <option>Informatique</option>
+                        <option>Intelligence artificielle</option>
+                        <option>Mécatronique</option>
+                        <option>Énergie</option>
+                        <option>Médecine</option>
+                        <option>Environnement</option>
+                        <option>Autres</option>
+                    </select>
+                        <label for="statut" class="depotform">Statut du projet*</label>
+                    <select id="statut" required class="depotform">
+                        <option>Idée</option>
+                        <option>Concept développé</option>
+                        <option>Recherche en cours</option>
+                        <option>Simulation</option>
+                        <option>Prototype</option>
+                        <option>Prototype fonctionnel</option>
+                        <option>Autre (veuillez préciser)</option>
+                    </select>
+                        <input type="text" id="autrestatut" placeholder="Macquette" class="disparaît depotform">
+                        <label for="description" class="depotform">Description*</label>
+                        <textarea id="description" required class="depotform"></textarea> 
+                        <label for="pb" class="depotform">Quel problème cherchez-vous à résoudre ?</label>
+                        <input type="text" id="pb" class="depotform"> 
+                        <label for="solution" class="depotform">Quelle solution proposez-vous ?</label>
+                        <input type="text" id="solution" class="depotform">
+                        <label for="explication" class="depotform">Comment votre solution fonctionnerait-elle ?*</label>
+                        <textarea id="explication" required class="depotform"></textarea> 
+                        <label for="image" class="depotform">Image</label>
+                        <input type="file" id="image" class="depotform">
+                        <label for="date" class="depotform">Date du jour (mettez bien la date d'aujourd'hui et pas celle où vous avez eu l'idée)*</label>
+                        <input type="date" id="date" required class="depotform">
+                        <input type="checkbox" id="declaration1" required class="depotform">
+                        <label for="declaration1" class="depotform">Je confirme être l'auteur de ce dépôt ou disposer des droits nécessaires pour le déposer.</label>
+                        <input type="checkbox" id="declaration2" required>
+                        <label for="declaration2" class="depotform">Je comprends que ce dépôt sur la plateforme constitue une preuve d'enregistrement interne et <strong>ne constitue pas en lui-même un brevet ni un titre de propriété industrielle. Mais il constituera une preuve en cas de vol.</strong></label>
+                        <input type="checkbox" id="declaration3" required class="depotform">
+                        <label for="declaration3" class="depotform">J'accepte les conditions de dépôt et de collaboration de la plateforme.</label>
+                        <button type="submit" class="depotform" id="boutondepot">Déposer</button>
+                    </form>
+                    </section>
+                    <section id="paiement">
+                        <h2 class="paiementform">Votre dépôt est prêt</h2>
+                            <p class="paiementform">Votre dépôt sera publiée après confirmation du paiement.</p>
+                            <p class="paiementform">Prix : <strong>5 €</strong> une seule fois par dépôt, pour être hébébérgé indéfiniment</p>
+                            <button class="paiementform" id="paiementbouton">Payer et publier mon formulaire</button>
+                    </section>
+                </main>
+        <footer>
+            <p>blaba tkt</p>
+        </footer>
+    </body>
+</html>
